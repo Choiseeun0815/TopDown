@@ -3,11 +3,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputController : TopDownController
 {
-    private Camera camera;
+    private Camera camera1;
 
     private void Awake()
     {
-        camera = Camera.main;
+        camera1 = Camera.main;
     }
 
     public void OnMove (InputValue value)
@@ -18,7 +18,7 @@ public class PlayerInputController : TopDownController
     public void OnLook(InputValue value)
     {
         Vector2 newAim = value.Get<Vector2>();
-        Vector2 worldPos  = camera.ScreenToWorldPoint(newAim);
+        Vector2 worldPos  = camera1.ScreenToWorldPoint(newAim);
         newAim = (worldPos -(Vector2) transform.position).normalized;
 
         CallLookEvent(newAim);

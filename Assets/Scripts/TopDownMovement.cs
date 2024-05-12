@@ -4,6 +4,7 @@ using UnityEngine;
 public class TopDownMovement : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer characterRenderer;
+    [SerializeField] private float speed = 10f;
 
     private TopDownController controller;
     private Rigidbody2D movementRigidbody2D;
@@ -39,7 +40,7 @@ public class TopDownMovement : MonoBehaviour
 
     private void ApplyMovement(Vector2 direction)
     {
-        direction = direction * 10;
+        direction = direction * speed;
         movementRigidbody2D.velocity = direction;
     }
 }
