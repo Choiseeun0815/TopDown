@@ -3,9 +3,12 @@ using UnityEngine;
 
 public class TopDownMovement : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer characterRenderer;
+
     private TopDownController controller;
     private Rigidbody2D movementRigidbody2D;
     private Vector2 movementDirection = Vector2.zero;
+    
 
     private void Awake()
     {
@@ -16,6 +19,13 @@ public class TopDownMovement : MonoBehaviour
     private void Start()
     {
         controller.OnMoveEvent += Move;
+        controller.OnLookEvent += CharacterFlip;
+    }
+
+    private void CharacterFlip(Vector2 direction)
+    {
+        float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        characterRenderer.flipX = Mathf.Abs(rotZ) > 90f;
     }
 
     private void Move(Vector2 direction)
