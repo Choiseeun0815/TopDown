@@ -29,7 +29,7 @@
  * 버튼을 누르면 대화가 시작된다.
 ---
 ### ✨ 시연 영상
-[![Video Label](http://img.youtube.com/vi/iPAefxQhTkI/0.jpg)](https://youtu.be/uLR1RNqJ1Mw?t=0s)
+[![Video Label](http://img.youtube.com/vi/iPAefxQhTkI/0.jpg)](https://youtu.be/iPAefxQhTkI?t=0s)
 
 ---
 ### ❗ 추후 개선 사항
