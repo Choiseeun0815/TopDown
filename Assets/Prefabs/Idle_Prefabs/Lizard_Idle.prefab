@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5188941468289711940}
   - component: {fileID: 5196840282300951586}
   - component: {fileID: 7613040588534274366}
+  - component: {fileID: 5209736490728733701}
   m_Layer: 0
   m_Name: Lizard_Idle
   m_TagString: Untagged
@@ -29,7 +30,7 @@ RectTransform:
   m_GameObject: {fileID: 2189923274408075110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,8 +78,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1216827225
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 377e209da51e8ff4eb98b235b49eea49, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -149,7 +150,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.02, y: -0.5}
@@ -165,3 +166,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3, y: 2.1}
   m_EdgeRadius: 0
+--- !u!114 &5209736490728733701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2189923274408075110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d925c39550acd704db7e3a0a8b7e6f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: 0
+  characters:
+  - {fileID: 5209736490728733701}
+  - {fileID: 0}
