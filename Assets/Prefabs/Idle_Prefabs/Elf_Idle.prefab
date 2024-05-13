@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8692499551287596788}
   - component: {fileID: 1216770252644412643}
   - component: {fileID: 7909801233980433386}
-  - component: {fileID: 9047134096494316832}
   - component: {fileID: 3444767359707837769}
   m_Layer: 0
   m_Name: Elf_Idle
@@ -28,7 +27,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8648053787294193550}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
@@ -121,22 +120,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8648053787294193550}
   m_CullTransparentMesh: 1
---- !u!114 &9047134096494316832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8648053787294193550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d925c39550acd704db7e3a0a8b7e6f06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: 1
-  characters:
-  - {fileID: 4194925493949210399, guid: ef9d6842405d93a438270b302ed0d6af, type: 3}
-  - {fileID: 9047134096494316832}
 --- !u!61 &3444767359707837769
 BoxCollider2D:
   m_ObjectHideFlags: 0
