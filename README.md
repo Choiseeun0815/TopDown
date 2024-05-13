@@ -29,6 +29,7 @@
  * 버튼을 누르면 대화가 시작된다.
 ---
 ### ✨ 시연 영상
-{% include video id="iPAefxQhTkI" provider="youtube" %}
+[![Video Label](http://img.youtube.com/vi/iPAefxQhTkI/0.jpg)](https://youtu.be/uLR1RNqJ1Mw?t=0s)
+
 ---
 ### ❗ 추후 개선 사항
