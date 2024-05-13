@@ -35,9 +35,15 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - button
   - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Plane
+    uniqueID: 3292738083
+    locked: 0
+  - name: Button
+    uniqueID: 3078140071
     locked: 0

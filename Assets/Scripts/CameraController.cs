@@ -5,7 +5,6 @@ public class CameraController : MonoBehaviour
 {
     public float cameraSpeed = 5.0f;
     private GameObject player;
-
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
