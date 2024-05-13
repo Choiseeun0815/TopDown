@@ -3738,7 +3738,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_TargetDisplay: 0
 --- !u!224 &872407866
 RectTransform:
@@ -4106,6 +4106,7 @@ GameObject:
   - component: {fileID: 1070081723}
   - component: {fileID: 1070081722}
   - component: {fileID: 1070081721}
+  - component: {fileID: 1070081724}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -4176,7 +4177,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1070081722}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1070081724}
+        m_TargetAssemblyTypeName: CloseChangeNamebutton, Assembly-CSharp
+        m_MethodName: CloseChangeNameUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1070081722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4215,6 +4228,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070081719}
   m_CullTransparentMesh: 1
+--- !u!114 &1070081724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070081719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7a73792e7b18f4caa84f87d9ea632b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeNameMenu: {fileID: 1175904165}
+  getName: {fileID: 1175904167}
+  playerNameTxt: {fileID: 1835296631}
 --- !u!1 &1175904165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4227,6 +4255,7 @@ GameObject:
   - component: {fileID: 1175904169}
   - component: {fileID: 1175904168}
   - component: {fileID: 1175904167}
+  - component: {fileID: 1175904170}
   m_Layer: 5
   m_Name: ChangeNameUI
   m_TagString: Untagged
@@ -4363,6 +4392,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175904165}
   m_CullTransparentMesh: 1
+--- !u!114 &1175904170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175904165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed407b3e9f7309c4590ff7bae5198a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 1175904167}
+  button: {fileID: 1070081721}
 --- !u!1 &1491427778
 GameObject:
   m_ObjectHideFlags: 0

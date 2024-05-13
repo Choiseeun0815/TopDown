@@ -10,7 +10,6 @@ public class SetPlayerName : playerNameController
     {
         string name = PlayerPrefs.GetString("Name");
         playerName.text = name;
-
         
     }
     private void Update()
