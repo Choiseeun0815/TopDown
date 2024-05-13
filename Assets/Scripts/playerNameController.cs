@@ -5,13 +5,18 @@ using UnityEngine.UI;
 
 public class playerNameController : MonoBehaviour
 {
-    [SerializeField] protected GameObject character;
+    protected GameObject player;
     public float yOffset;
-
+    private void Start()
+    {
+    }
     private void Update()
     {
+        if (player == null)
+            player = GameObject.FindGameObjectWithTag("Player");
+
         transform.position = 
-            character.transform.position + new Vector3(0, yOffset, 0);
+            player.transform.position + new Vector3(0, yOffset, 0);
     }
 
 }

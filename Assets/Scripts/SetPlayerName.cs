@@ -10,11 +10,16 @@ public class SetPlayerName : playerNameController
     {
         string name = PlayerPrefs.GetString("Name");
         playerName.text = name;
+
+        
     }
     private void Update()
     {
-        transform.position =
-           character.transform.position + new Vector3(0, yOffset, 0);
+        if(player != null)
+        {
+            transform.position =
+                player.transform.position + new Vector3(0, yOffset, 0);
+        }
     }
 
 }
