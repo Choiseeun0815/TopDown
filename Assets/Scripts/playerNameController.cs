@@ -7,9 +7,7 @@ public class playerNameController : MonoBehaviour
 {
     protected GameObject player;
     public float yOffset;
-    private void Start()
-    {
-    }
+    
     private void Update()
     {
         if (player == null)

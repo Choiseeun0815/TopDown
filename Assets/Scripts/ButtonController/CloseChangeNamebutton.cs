@@ -13,6 +13,10 @@ public class CloseChangeNamebutton : ChangeNameButton
         string name = PlayerPrefs.GetString("Name");
         playerNameTxt.text = name;
 
+        int playerIdx = setPlayerList.playerList.Count - 1;
+        setPlayerList.playerList[playerIdx] = name;
+        
+
         changeNameMenu.SetActive(false);
     }
 }
