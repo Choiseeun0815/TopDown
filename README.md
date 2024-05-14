@@ -29,7 +29,7 @@
   * 버튼을 누르면 대화가 시작된다.
 ---
 ### ✨ 시연 영상
-[![Video Label](http://img.youtube.com/vi/iPAefxQhTkI/0.jpg)](https://youtu.be/iPAefxQhTkI?t=0s)
+https://github.com/Choiseeun0815/C-SimpleGame/assets/103297048/fcfaf3c4-80b2-4ad2-bd05-45d680097f5f
 
 ---
 ### ❗ 추후 개선 사항
