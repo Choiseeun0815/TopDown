@@ -33,3 +33,5 @@ https://github.com/Choiseeun0815/C-SimpleGame/assets/103297048/fcfaf3c4-80b2-4ad
 
 ---
 ### ❗ 추후 개선 사항
+* 이름을 변경할 때 참석자 버튼을 누르지 않으면 List가 생성되지 않아 오류가 생기는 현상
+* 여러개의 npc를 관리하기 용이하도록 변경 
